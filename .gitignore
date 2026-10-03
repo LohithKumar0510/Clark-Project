@@ -1,0 +1,22 @@
+# Environments / secrets
+.env
+.venv/
+venv/
+.streamlit/secrets.toml
+
+# Output Data
+output/
+Invoice/
+New folder/
+Project/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

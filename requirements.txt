@@ -1,0 +1,9 @@
+playwright
+pandas
+python-dotenv
+openpyxl
+streamlit
+beautifulsoup4
+google-genai
+pydantic
+tenacity

@@ -1,0 +1,126 @@
+{
+    "Autumn Flatbread": {
+        "description": "1 loaf serves 40 people",
+        "unit": "loaf",
+        "calculate": "math.ceil(qty / 40)"
+    },
+    "Avesta Rolls": {
+        "description": "Each bin has 105 rolls",
+        "unit": "bin",
+        "calculate": "qty",
+        "bin_size": 105
+    },
+    "Bagel chips": {
+        "description": "ordered in bins",
+        "unit": "bin",
+        "calculate": "qty"
+    },
+    "Challah Buns": {
+        "description": "42 per batch",
+        "unit": "batch",
+        "calculate": "qty",
+        "bin_size": 42
+    },
+    "Cheddar Crackers": {
+        "description": "ordered in bins",
+        "unit": "bin",
+        "calculate": "qty"
+    },
+    "Ciabatta": {
+        "description": "1 per person + 5% extra",
+        "unit": "piece",
+        "calculate": "math.ceil(qty * 1.05)"
+    },
+    "Dinner Rolls": {
+        "description": "105 rolls per bin, 1.55 per person for buffet, 2.05 per person seated",
+        "unit": "bin",
+        "calculate": "qty * 1.55",
+        "note": "Assuming buffet default. Use qty * 2.05 if seated.",
+        "bin_size": 105
+    },
+    "Garlic bread sticks": {
+        "description": "1.55 per person",
+        "unit": "stick",
+        "calculate": "math.ceil(qty * 1.55)"
+    },
+    "Hoagies": {
+        "description": "1 per person + 5% extra",
+        "unit": "bin",
+        "calculate": "qty * 1.05",
+        "bin_size": 36
+    },
+    "Hot dog bun": {
+        "description": "72 bun per bin",
+        "unit": "bin",
+        "calculate": "qty",
+        "bin_size": 72
+    },
+    "Jr. Sem Burger": {
+        "description": "72 per bin",
+        "unit": "bin",
+        "calculate": "qty",
+        "bin_size": 72
+    },
+    "MG Sourdough": {
+        "description": "20 Slices per loaf at 14 mm",
+        "unit": "loaf",
+        "calculate": "math.ceil(qty / 20)",
+        "note": "For 23mm, it is 10 slices per loaf (qty / 10)"
+    },
+    "Naan": {
+        "description": "1 per person + 5% extra",
+        "unit": "piece",
+        "calculate": "math.ceil(qty * 1.05)"
+    },
+    "Pita bread": {
+        "description": "1 per person + 5% extra",
+        "unit": "piece",
+        "calculate": "math.ceil(qty * 1.05)"
+    },
+    "Semolina Bun": {
+        "description": "1 per person + 5% extra",
+        "unit": "bun",
+        "calculate": "math.ceil(qty * 1.05)"
+    },
+    "Silver Dollar": {
+        "description": "2 per person",
+        "unit": "roll",
+        "calculate": "qty * 2"
+    },
+    "Sourdough Loaf": {
+        "description": "20 Slices per loaf at 14 mm",
+        "unit": "loaf",
+        "calculate": "math.ceil(qty / 20)"
+    },
+    "Sourdough Baguette": {
+        "description": "70 Slices, 3 per person",
+        "unit": "baguette",
+        "calculate": "math.ceil((qty * 3) / 70)"
+    },
+    "Union Pizza 24 Oz": {
+        "description": "We will send 2 extra per order",
+        "unit": "pizza",
+        "calculate": "qty + 2"
+    },
+    "Vegan Rolls": {
+        "description": "1.55 per person for buffet",
+        "unit": "roll",
+        "calculate": "math.ceil(qty * 1.55)",
+        "note": "2.05 per person seated"
+    },
+    "Wheat Hoagie": {
+        "description": "1 per person + 5% extra",
+        "unit": "hoagie",
+        "calculate": "math.ceil(qty * 1.05)"
+    },
+    "Assorted Bread": {
+        "description": "Crowd Pleaser - ((qty*1.15*2)/20)/4 = for Number of loafs of each flavor",
+        "unit": "loaf_each_flavor",
+        "calculate": "math.ceil(((qty * 1.15 * 2) / 20) / 4)"
+    },
+    "Crowd Pleaser": {
+        "description": "((qty*1.15*2)/20)/4 = for Number of loafs of each flavor",
+        "unit": "loaf_each_flavor",
+        "calculate": "math.ceil(((qty * 1.15 * 2) / 20) / 4)"
+    }
+}
